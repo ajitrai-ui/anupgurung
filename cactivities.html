@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Books</title>
+    <link rel="stylesheet" href="cactivities.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <span class="hamburger">&#9776;</span> <!-- Hamburger Icon -->
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="familymembers.html">Family Members</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="contactme.html">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        
+        
+    </section>
+
+    <section class="cards-container">
+        <div class="card">
+            <div class="image-container">
+                <a href="https://www.google.com/search?q=fiction+books" target="_blank">
+                    <img src="fiction.jpg" alt="Fiction Books">
+                </a>
+            </div>
+            <h2>Reading</h2>
+            <p>Dive into the world of imagination and knowledge. Explore stories that spark imagination and creativity.</p>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <a href="https://www.google.com/search?q=adventure+movies" target="_blank">
+                    <img src="movie.jpg" alt="Non-Fiction Books">
+                </a>
+            </div>
+            <h2>Watching Movies</h2>
+            <p>Provides entertainment, inspires creativity, and broadens perspectives.</p>
+        </div>
+
+        <div class="card">
+            <div class="image-container">
+                <a href="https://www.google.com/search?q=english+musics" target="_blank">
+                    <img src="music.jpg" alt="Self-Help Books">
+                </a>
+            </div>
+            <h2>Listening to Musics</h2>
+            <p>Enhances mood, reduces stress, and fosters emotional connection.</p>
+        </div>
+    </section>
+
+    <script src="cactivities.js"></script>
+    <script>
+        // JavaScript for Hamburger Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const links = document.querySelector('.links');
+
+        hamburger.addEventListener('click', () => {
+            links.classList.toggle('active'); // Toggle the visibility of navigation links
+        });
+    </script>
+</body>
+</html>

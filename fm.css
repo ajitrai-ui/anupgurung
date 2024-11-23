@@ -1,0 +1,116 @@
+
+/* Basic Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #111;
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-container .links a {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a:hover {
+    color: rgb(128, 8, 179);
+    border-bottom: 2px solid rgb(128, 8, 179);
+}
+
+/* Family Section */
+.family-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.family-section h1 {
+    color: #ff3333;
+    margin-bottom: 40px;
+}
+
+/* Family Container */
+.family-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Arrange items in rows */
+.family-member {
+    background-color: #222;
+    border: 2px solid rgb(128, 8, 179);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; /* Increased width for larger description box */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 calc(50% - 40px); /* Two items per row */
+    max-width: 300px;
+}
+
+/* Ensure the last item spans one row */
+.family-container .family-member:last-child {
+    flex: 1 1 100%;
+}
+
+/* Member Photo Styles */
+.photo-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Member Info Styles */
+.family-member h2 {
+    color: rgb(128, 8, 179);
+    margin: 10px 0;
+}
+
+.family-member p {
+    margin: 5px 0;
+    font-size: 1em; /* Adjusted font size for clarity */
+    line-height: 1.5em; /* Improved readability */
+}
+
+/* Hover Effects */
+.family-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(128, 8, 179, 0.5);
+}
